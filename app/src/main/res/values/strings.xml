@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">Q-System</string>
+    <string-array name="jn">
+        <item>Massive</item>
+        <item>few joints</item>
+        <item>one joint set</item>
+        <item>one joint set plus random</item>
+        <item>two joint set</item>
+        <item>two joint set plus random</item>
+        <item>three joint set</item>
+        <item>three joint set plus random</item>
+        <item>four or more joint set</item>
+        <item>crushed rock,earth like</item>
+    </string-array>
+    <string-array name="jr">
+        <item>Discontinous joints</item>
+        <item>Rought or irregular</item>
+        <item>Smooth,undulating</item>
+        <item>Slickened,undulating</item>
+        <item>Rough or irregular</item>
+        <item>Smooth,planar</item>
+        <item>Slickened planar</item>
+    </string-array>
+    <string-array name="ja">
+        <item>Healed or welded</item>
+        <item>Fresh joint walls</item>
+        <item>Slightly altered joint walls</item>
+        <item>Friction material</item>
+        <item>cohesive material</item>
+        <item>Friction material:thin filling</item>
+        <item>Friction material:thik filling</item>
+        <item>hard cohesive : thin filling</item>
+        <item>hard cohesive : thik filling</item>
+        <item>soft cohesive : thin filling</item>
+        <item>soft cohesive : thik filling</item>
+        <item>swelling clay material: thin filling</item>
+        <item>swelling clay material: thik filling</item>
+
+
+    </string-array>
+    <string-array name="jw">
+        <item>Dry Excavation(minor flow)</item>
+        <item>medium inflow or pressure</item>
+        <item>high pressure in competent rock</item>
+        <item>high pressure,considerable outwash</item>
+        <item>water pressure at blasting</item>
+        <item>water pressure continuing without delay</item>
+    </string-array>
+    <string-array name="esr">
+        <item>Temporary mine opening</item>
+        <item>Vertical shaft</item>
+        <item>water tunnels</item>
+        <item>storage caverns</item>
+        <item>power station,road with heavy traffic</item>
+        <item>nuclear power plants</item>
+
+    </string-array>
+    <string-array name="srf">
+        <item>
+            multiple weakness zones with weakness
+        </item>
+        <item>Single Weakness Zone(below 50m)</item>
+        <item>Single Weakness Zone(above 50m)</item>
+        <item>Multiple Shear Zones</item>
+        <item>Single Shear Zones(below 50) </item>
+        <item>Single Shear Zones(above 50) </item>
+        <item>Loose,Open Joints</item>
+        <item>Low Stress Near Surface</item>
+        <item>Medium stress</item>
+        <item>High Stress tught stucture</item>
+        <item>Moderate slabbing after 1 hr</item>
+        <item>slabbing after few hrs</item>
+        <item>Heavy rock burst</item>
+        <item>Mid squeezing rock pressure</item>
+        <item>Heavy Squeezing rock pressure</item>
+        <item>Mid swelling rock pressure</item>
+        <item>Heavy swelling rock pressure</item>
+    </string-array>
+    <string-array name="type">
+        <item>Andesite</item>
+        <item>Amphibolite</item>
+        <item>Augen Gneiss</item>
+        <item>Basalt</item>
+        <item>Clay Schist</item>
+        <item>Diorite</item>
+        <item>Dolerite</item>
+        <item>Dolomite</item>
+        <item>Gabbro</item>
+        <item>Granite</item>
+        <item>Granitic Gneiss</item>
+        <item>Granodiorite</item>
+        <item>Granulite</item>
+        <item>Gneiss</item>
+        <item>GreenSchist</item>
+        <item>Greenstone</item>
+        <item>Greywacke</item>
+        <item>Limestone</item>
+        <item>Marble</item>
+        <item>MicaGneiss</item>
+        <item>Micaquartzite</item>
+        <item>Micaschist</item>
+        <item>Phyllite</item>
+        <item>Quartzite</item>
+        <item>Quartzite phy.</item>
+        <item>Rhyolite</item>
+        <item>Sandstone</item>
+        <item>Serpentine</item>
+        <item>Shale</item>
+        <item>Slitstone</item>
+        <item>Slate</item>
+        <item>Syenite</item>
+        <item>Tuff</item>
+        <item>Ultrabasic</item>
+        <item>Clay(Hard)</item>
+        <item>Clay(stiff)</item>
+        <item>Clay(Soft)</item>
+        <item>Slit,Sand</item>
+    </string-array>
+</resources>
