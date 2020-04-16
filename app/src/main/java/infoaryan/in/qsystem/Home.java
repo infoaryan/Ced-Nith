@@ -34,41 +34,47 @@ public class Home extends AppCompatActivity {
         calc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Double Q, rqd, jr, jn, ja, jw, ed, b, srf, de, qc, pv, esr, ph, qw, fa;
+                Double Q, rqd, jr, jn, ja, jw, ed, b, srf, de, qc, pv, esr, ph, qw, fa,bl;
                 rqd = Double.parseDouble(rqdspinner.getSelectedItem().toString());
-                sharedPreferences=getSharedPreferences("imp",MODE_PRIVATE);
-                SharedPreferences.Editor edit=sharedPreferences.edit();
+                sharedPreferences = getSharedPreferences("imp", MODE_PRIVATE);
+                SharedPreferences.Editor edit = sharedPreferences.edit();
                 DecimalFormat decimalFormat = new DecimalFormat("0.000");
-
+                // getting of the parameters form the spinners
                 jr = seljr();
                 jn = seljn();
                 esr = selesr();
                 ja = selja();
                 jw = seljw();
                 srf = selsrf();
+
                 Q = (rqd * jr * jw) / (jn * ja * srf);//to show
+
+
                 String clas;
-                if (Q>0.001 && Q<=0.01) {
+                {
+
+                if (Q > 0.001 && Q <= 0.01) {
                     clas = "Exceptionally poor";
-                } else if (rqd >0.01 && rqd <= 0.1) {
+                } else if (rqd > 0.01 && rqd <= 0.1) {
                     clas = "Extremely poor";
                 } else if (rqd > 0.1 && rqd <= 1) {
                     clas = "very poor";
                 } else if (rqd > 1 && rqd <= 4) {
                     clas = "poor";
-                }
-                else if (rqd >4 && rqd <= 10) {
+                } else if (rqd > 4 && rqd <= 10) {
                     clas = "fair";
                 } else if (rqd > 10 && rqd <= 40) {
                     clas = "good";
                 } else if (rqd > 40 && rqd <= 100) {
                     clas = "very good";
-                }
-                else if (rqd > 100 && rqd <= 400) {
+                } else if (rqd > 100 && rqd <= 400) {
                     clas = "Extremely good";
-                }else {
+                } else {
                     clas = "Exceptionally good";
                 }
+
+            }// determination of the class
+
                 b = Double.parseDouble(bspinner.getSelectedItem().toString());
                 if (Q > 10) {
                     qw = 5 * Q;
@@ -99,10 +105,13 @@ public class Home extends AppCompatActivity {
                     edit.putString("pv",""+decimalFormat.format(pv)+"MPa");
                     edit.putString("ph",""+decimalFormat.format(ph)+"Mpa");
                 }
+
+
                 qc = selqc();
                 fa = Math.atan(jr / ja);
                 fa=(fa*180)/3.14;
                 de = b / esr;
+                bl = 2.0 + (0.15*b/esr);
                 ed = 10 * (Math.pow((Q * qc / 100), 0.33));
 
 
@@ -113,6 +122,7 @@ public class Home extends AppCompatActivity {
 
                 edit.putString("de",""+decimalFormat.format(de));
                 edit.putString("ed",""+decimalFormat.format(ed));
+                edit.putString("bl",""+decimalFormat.format(bl));
                 edit.commit();
                 Intent intent = new Intent(Home.this,Show.class);
                 startActivity(intent);
@@ -397,7 +407,7 @@ public class Home extends AppCompatActivity {
         int i = srfspinner.getSelectedItemPosition();
         switch (i) {
             case 0:
-                re = 3.5;
+                re = 4.0;
                 break;
             case 1:
                 re = 2.25;

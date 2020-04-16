@@ -7,40 +7,38 @@
     android:orientation="vertical"
     android:background="#ACACAC"
     android:gravity="center"
-    tools:context=".Show">
+    tools:context=".rmrresult">
     <TextView
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="Rock Mass Quality"
+        android:text="Rock Mass Rating"
         android:textColor="#000"
-        android:textSize="20sp"
-        android:textAlignment="textStart"
-        android:id="@+id/rmq"/>
+        android:layout_marginBottom="20dp"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+     />
     <TextView
         android:layout_width="350dp"
         android:textSize="20sp"
         android:textColor="#000"
-
         android:layout_height="wrap_content"
         android:text="class"
-        android:id="@+id/clas"/>
+        android:gravity="center_horizontal"
+        android:id="@+id/t1"/>
     <TextView
         android:layout_width="350dp"
         android:textSize="20sp"
         android:textColor="#000"
-
         android:layout_height="wrap_content"
         android:text="pv"
-        android:id="@+id/pv"/>
+        android:id="@+id/t2"/>
     <TextView
         android:layout_width="350dp"
         android:textSize="20sp"
         android:textColor="#000"
-
-
         android:layout_height="wrap_content"
         android:text="ph"
-        android:id="@+id/Ph"/>
+        android:id="@+id/t3"/>
     <TextView
         android:layout_width="350dp"
         android:textSize="20sp"
@@ -48,7 +46,7 @@
 
         android:layout_height="wrap_content"
         android:text="frictionangle"
-        android:id="@+id/fa"/>
+        android:id="@+id/t4"/>
     <TextView
         android:layout_width="350dp"
         android:textSize="20sp"
@@ -56,37 +54,31 @@
 
         android:layout_height="wrap_content"
         android:text="De"
-        android:id="@+id/de"/>
-    <TextView
-        android:layout_width="350dp"
-        android:textSize="20sp"
-        android:textColor="#000"
-
-        android:layout_height="wrap_content"
-        android:text="Elastic Modulus"
-        android:id="@+id/ed"/>
+        android:id="@+id/t5"/>
     <TextView
         android:layout_width="350dp"
         android:textSize="20sp"
         android:textColor="#000"
         android:layout_height="wrap_content"
         android:text="Elastic Modulus"
-        android:id="@+id/bl"/>
-    <ImageView
+        android:id="@+id/t6"/>
+    <TextView
         android:layout_width="350dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/graph"/>
+        android:textSize="16sp"
+        android:textColor="#3C3B3B"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"
+        android:text="Elastic Modulus"
+        android:id="@+id/t7"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="Go Back !"
         android:textColor="#000"
-
         android:background="@drawable/gradient_button"
         android:layout_marginTop="20dp"
-       android:id="@+id/hhh"/>
+        android:id="@+id/back"/>
 
 
 

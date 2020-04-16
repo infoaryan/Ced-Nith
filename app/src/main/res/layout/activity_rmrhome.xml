@@ -1,9 +1,448 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".rmrhome">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+    android:gravity="center_vertical"
+        android:background="@drawable/gradient_bck"
+        android:layout_height="match_parent"
+        android:weightSum="9"
+        tools:context=".rmrhome">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:layout_marginTop="10dp"
+        android:text="Rock Mass Rating"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:textSize="28sp"
+        android:textColor="#000"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:rowCount="6"
+            android:layout_weight="7.5"
+            android:columnCount="1"
+            android:columnOrderPreserved="false">
+            <androidx.cardview.widget.CardView
+                android:layout_height="0dp"
+                app:cardCornerRadius="10dp"
+                android:padding="5dp"
+                android:elevation="7dp"
+                android:layout_margin="7dp"
+                android:layout_rowWeight="1.6"
+                android:layout_width="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:weightSum="1.7"
+                    android:background="@drawable/gradient_card"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:weightSum="3"
+                        >
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textColor="#000"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Compressive strength"
+                            android:id="@+id/ucscheckbox"
+                            />
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textColor="#000"
+
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Point Load Strength"
+                            android:id="@+id/plsicheckbox"
+                            />
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textColor="#000"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Qualitative description"
+                            android:id="@+id/typecheckbox"
+                            />
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:text="R1"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:paddingBottom="5dp"
+                        android:textSize="17sp"
+                        android:gravity="center"
+                        android:text="Uniaxial Compressive Strength"/>
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:id="@+id/r1spinner"/>
+
+
+                </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="0dp"
+                app:cardCornerRadius="10dp"
+                android:padding="5dp"
+                android:elevation="7dp"
+                android:layout_margin="7dp"
+
+                android:layout_rowWeight="1"
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:background="@drawable/gradient_card"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:text="R2"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:paddingBottom="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:textSize="17sp"
+                        android:gravity="center"
+                        android:text="Rock Quality Designation"/>
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:id="@+id/r2spinner"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="0dp"
+                app:cardCornerRadius="10dp"
+                android:padding="5dp"
+                android:elevation="7dp"
+
+                android:layout_margin="7dp"
+
+                android:layout_rowWeight="1"
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:background="@drawable/gradient_card"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:text="R3"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:paddingBottom="5dp"
+                        android:textSize="17sp"
+                        android:gravity="center"
+                        android:text="Spacing"/>
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:id="@+id/r3spinner"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="0dp"
+                app:cardCornerRadius="10dp"
+                android:padding="5dp"
+                android:elevation="7dp"
+                android:layout_margin="7dp"
+
+                android:layout_rowWeight="1"
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/gradient_card"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:text="R4"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:textSize="17sp"
+                        android:paddingBottom="5dp"
+                        android:gravity="center"
+                        android:text="Discontinuities Condition"/>
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:id="@+id/r4spinner"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="0dp"
+                app:cardCornerRadius="10dp"
+                android:padding="5dp"
+                android:elevation="7dp"
+                android:layout_margin="7dp"
+                android:layout_rowWeight="1.5"
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:weightSum="1.7"
+                    android:background="@drawable/gradient_card"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:weightSum="3"
+                    >
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Inflow per 10m tunnel"
+                        android:textColor="#000"
+
+                        android:id="@+id/inflowcheckbox"
+                        />
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Joint water p/s "
+                        android:textColor="#000"
+
+                        android:id="@+id/psratiocheckbox"
+                        />
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+
+                        android:text="General Description"
+                        android:id="@+id/generalcheckbox"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:text="R5"/>
+                    <TextView
+                        android:paddingBottom="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:textSize="17sp"
+                        android:gravity="center"
+                        android:text="Inflow per 10m tunnel length"/>
+
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="match_parent"
+                        android:id="@+id/r5spinner"/>
+
+
+                </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_height="0dp"
+                app:cardCornerRadius="10dp"
+                android:padding="5dp"
+                android:elevation="7dp"
+                android:layout_margin="7dp"
+
+                android:layout_rowWeight="1.5"
+                android:layout_width="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:weightSum="1.7"
+                    android:background="@drawable/gradient_card"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:paddingLeft="20dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:weightSum="2"
+                    >
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Dam"
+                        android:textColor="#000"
+
+                        android:id="@+id/Damcheckbox"
+                        />
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Tunnel"
+                        android:textColor="#000"
+
+                        android:id="@+id/tunnelcheckbox"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:text="R6"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:textSize="17sp"
+                        android:paddingBottom="5dp"
+                        android:gravity="center"
+                        android:text="Tunnels assessment :"/>
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:id="@+id/r6spinner"/>
+
+
+                </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/calcuate"
+            android:layout_marginBottom="15dp"
+            android:text="Result"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:background="@drawable/gradient_button"
+          />
+        </LinearLayout>
+
+    </LinearLayout>
+

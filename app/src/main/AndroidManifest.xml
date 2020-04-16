@@ -9,13 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".gsihome"></activity>
-        <activity android:name=".rmrhome" />
-        <activity android:name=".Home1"
-            />
-        <activity android:name=".Show" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".rmrresult"></activity>
+        <activity android:name=".gsihome" />
         <activity
-            android:name=".Home" />
+            android:name=".rmrhome"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".Home1" />
+        <activity
+            android:name=".Show"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".Home" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">

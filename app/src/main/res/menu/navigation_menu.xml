@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:id="@+id/one"
+            android:title="Home"
+            android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/two"
+        android:icon="@drawable/rmr"
+        android:title="RMR"/>
+    <item android:id="@+id/three" android:title="Q - System"
+        android:icon="@drawable/q_sys"/>
+    <item android:id="@+id/four" android:title="GSI"
+        android:icon="@drawable/gsi"/>
+    <item android:id="@+id/five" android:title="About app"/>
+
+
+</menu>

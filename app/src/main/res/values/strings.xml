@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">Q-System</string>
+    <string name="app_name">Nith-Ced</string>
+    <string name="Open">open</string>
+    <string name="Close">Close</string>
     <string-array name="jn">
         <item>Massive</item>
         <item>few joints</item>
@@ -116,4 +118,96 @@
         <item>Clay(Soft)</item>
         <item>Slit,Sand</item>
     </string-array>
+
+    <string-array name="r2">
+        <item>90-100</item>
+        <item>75-90</item>
+        <item>50-75</item>
+        <item>25-50</item>
+        <item>Less than 25</item>
+    </string-array>
+    <string-array name="r3">
+        <item> Greater Than 2</item>
+        <item>0.6 - 2</item>
+        <item>0.2 - 0.6</item>
+        <item>0.06 - 0.02</item>
+        <item>Less than 0.06</item>
+
+    </string-array>
+    <string-array name="r4">
+        <item>Very rough and unweathered, discontinuos no separation</item>
+        <item>Rough and Slight weathered, separation less than 1mm</item>
+        <item>Slightly rough,wall rock surface,less than 1mm</item>
+        <item>Slickened wall rock surface 1-5mm thick,gouge</item>
+        <item>5mm thick gouge, 5mm wide continuous</item>
+    </string-array>
+    <string-array name="r11">
+        <item>greater than 250</item>
+        <item>100-250</item>
+        <item>50-100</item>
+        <item>25-50</item>
+        <item>10-25</item>
+        <item>2-10</item>
+        <item>1-2</item>
+    </string-array>
+    <string-array name="r12">
+        <item> 8 </item>
+        <item> 4-8</item>
+        <item>2-4</item>
+        <item>1-2</item>
+        <item>use of uniaxial Comp. Strength</item>
+        <item>-do-</item>
+        <item>-do-</item>
+    </string-array>
+    <string-array name="r13">
+        <item>
+            Expectionally good
+        </item>
+        <item>Very Strong</item>
+        <item>Strong</item>
+        <item>Average</item>
+        <item>Weak</item>
+        <item>Very Weak</item>
+        <item>Extremely Weak</item>
+    </string-array>
+    <string-array name="r51">
+        <item>none</item>
+        <item>less than 10</item>
+        <item>25-125</item>
+        <item>25-125</item>
+        <item>greater than 125</item>
+    </string-array>
+    <string-array name="r52">
+        <item>0</item>
+        <item>0-0.1</item>
+        <item>0.1-0.5</item>
+        <item>0.2-0.5</item>
+        <item>greater than 0.5</item>
+    </string-array>
+    <string-array name="r53">
+        <item>Completely dry</item>
+        <item>Damp</item>
+        <item>Wet</item>
+        <item>Dripping</item>
+        <item>Flowing</item>
+    </string-array>
+    <string-array name="tunnel">
+        <item>With dip,45-90,perpendicular to axis </item>
+        <item>with dip,20-45,perpendicular to axis </item>
+        <item>against dip,45-90,perpendicular to axis </item>
+        <item>against dip,20-45,perpendicular to axis </item>
+        <item>dip,20-45,parallel to axis </item>
+        <item>dip,45-90,parallel to axis </item>
+        <item>Irrespective of strike, 0-20</item>
+
+    </string-array>
+    <string-array name="dam">
+        <item>Dip 0-10</item>
+        <item>Dip 10-30, upstream</item>
+        <item>Dip 10-30, Downstream</item>
+        <item>Dip 30-60</item>
+        <item>Dip 60-90</item>
+    </string-array>
+
+
 </resources>
